@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gang Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tablet">
+    <h1 class="title">Gang War Leaderboards</h1>
+    <div class="tabs">
+      <button class="tab-button active" data-tab="daily">Daily Leaderboard</button>
+      <button class="tab-button" data-tab="weekly">Weekly Leaderboard</button>
+      <button class="tab-button" data-tab="main">Main Leaderboard</button>
+      <button class="tab-button" data-tab="ai">AI Leaderboard</button>
+    </div>
+
+    <div class="content" id="daily">
+      <h2>Daily Leaderboard</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Kills</th><th>Deaths</th></tr></thead>
+        <tbody id="dailyBody"></tbody>
+      </table>
+    </div>
+
+    <div class="content hidden" id="weekly">
+      <h2>Weekly Leaderboard</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Kills</th><th>Deaths</th></tr></thead>
+        <tbody id="weeklyBody"></tbody>
+      </table>
+    </div>
+
+    <div class="content hidden" id="main">
+      <h2>Main Leaderboard</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Kills</th><th>Deaths</th></tr></thead>
+        <tbody id="mainBody"></tbody>
+      </table>
+    </div>
+
+    <div class="content hidden" id="ai">
+      <h2>AI Weekly Leaderboard</h2>
+      <table>
+        <thead><tr><th>Player</th><th>Kills</th><th>Deaths</th></tr></thead>
+        <tbody id="aiBody"></tbody>
+      </table>
+    </div>
+
+    <button class="close-btn" id="closeBtn">X</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
